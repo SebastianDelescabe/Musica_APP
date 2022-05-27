@@ -5,14 +5,13 @@
     text-align: center;
 
     font-family: 'Montserrat';
-    color: #FFFFFF;
 }
 
 .home__header-title {
     width: 450px;
     font-weight: 700;
     font-size: 65px;
-    line-height: 78px;
+    line-height: 75px;
 }
 
 .home__header-title span {
