@@ -18,3 +18,10 @@ a {
     -ms-user-select: none;
     user-select: none;
 }
+
+.App {
+    background-color: white;
+    color: black;
+    width: 98.7vw;
+    height: 92vh;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Search.css' 
 
 const Search = ({ handleOnSubmit, setInput, input }) => {
 
@@ -8,7 +8,7 @@ const Search = ({ handleOnSubmit, setInput, input }) => {
     }
 
     return (
-        <div className='home__search'>
+        <div className='search'>
             <form onSubmit={handleOnSubmit}>
                 <input
                     type='text'
