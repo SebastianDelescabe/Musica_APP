@@ -58,6 +58,12 @@
     }
 }
 
+@media screen and (max-width: 850px) {
+    .navbar__position {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 650px) {
 
     .navbar__logo {
@@ -68,6 +74,9 @@
         display: none;
     }
 
+    .navbar__position {
+        width: 100%;
+    }
     .navbar__link-logout-responsive {
         display: flex;
     }
