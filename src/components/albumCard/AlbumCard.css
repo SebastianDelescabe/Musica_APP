@@ -50,3 +50,22 @@
 
     transition: color .3s ease;
 }
+
+@media screen and (max-width: 1150px) {
+    .albumCard {
+        margin:2rem 0rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .navbar__position {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar__position {
+        width: 100%;
+    }
+}

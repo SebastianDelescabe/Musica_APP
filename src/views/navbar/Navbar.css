@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.navbar__logo-responsive {
+    display: none;
+}
+
 .navbar__loged {
     flex: 1;
     display: flex;
@@ -11,8 +15,8 @@
 }
 
 .navbar__position {
+    width: 40%;
     display: flex;
-    width: 35%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -30,7 +34,8 @@
     color: #D6F379;
 }
 
-.navbar__link {
+.navbar__link,
+.navbar__link-logout {
     cursor: pointer;
     font-family: 'Montserrat';
     font-weight: 600;
@@ -40,4 +45,30 @@
 
 .navbar__position img {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar__position {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .navbar__logo {
+        display: none;
+    }
+
+    .navbar__link-logout {
+        display: none;
+    }
+
+    .navbar__link-logout-responsive {
+        display: flex;
+    }
+
+    .navbar__logo-responsive {
+        display: flex;
+        margin-right: 0.5rem;
+    }
 }

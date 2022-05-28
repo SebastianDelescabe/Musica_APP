@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { logo, sun } from '../../assets';
 import { BackgroundContext } from '../../context/BackgroundContext';
+import { logoResponsive, logoutResponsive } from '../../assets';
 import './Navbar.css'
 
 const Navbar = () => {
@@ -26,7 +27,8 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <img src={logo} alt="" />
+            <img className='navbar__logo' src={logo} alt="" />
+            <img className='navbar__logo-responsive' src={logoResponsive} alt="" />
             {token && (
                 <div className='navbar__loged'>
                     <div className='navbar__position'>
@@ -48,9 +50,16 @@ const Navbar = () => {
                         <NavLink
                             onClick={handleLogout}
                             to={'/'}
-                            className='navbar__link'
+                            className='navbar__link-logout'
                         >
                             Cerrar sesión
+                        </NavLink>
+                        <NavLink
+                            onClick={handleLogout}
+                            to={'/'}
+                            className='navbar__link-logout-responsive'
+                        >
+                            <img src={logoutResponsive} alt="" />
                         </NavLink>
                         <div />
                         <img

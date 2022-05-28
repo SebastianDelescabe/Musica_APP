@@ -22,6 +22,7 @@ const App = () => {
                         <Route exact path='/' element={<Login />} />
                         <Route path='/search' element={<Home />} />
                         <Route path='/albums' element={<Albums />} />
+                        <Route path='/*' element={<Login />} />
                     </Routes>
                 </div>
             </Favorites.Provider>
