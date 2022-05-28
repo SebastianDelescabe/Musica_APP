@@ -23,7 +23,7 @@ const Login = () => {
             {token && <Navigate to={'/search'} />}
             {!token && (
                 <div className='login'>
-                    <img src={loginArrow} alt="Login Arrow" />
+                    <img className='login__arrow' src={loginArrow} alt="Login Arrow" />
                     <div className='login__data'>
                         <span className='login__data-title'>Disfruta de la <span>mejor musica</span></span>
                         <span className='login__data-subtitle'>Accede a tu cuenta para guardar tus albumes favoritos.</span>
