@@ -5,6 +5,7 @@
 body {
     background-color: rgb(24, 23, 23);
     color: white;
+    overflow-y: scroll;
 }
 
 a {
@@ -45,4 +46,12 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #D6F379;
 }

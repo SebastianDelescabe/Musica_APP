@@ -49,3 +49,42 @@
     max-width: 30rem;
     padding: 2rem;
 }
+
+@media screen and (max-width: 650px) {
+
+    .albums__header {
+        text-align: start;
+        padding: 1rem 0rem;
+    }
+
+    .albums__header-title {
+        width: 320px;
+        font-size: 40px;
+    }
+
+    .albums__header-subtitle {
+        width: 320px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .albums__slider-container {
+        margin: 0rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .albums__header {
+        padding: 2rem 0rem;
+    }
+
+    .albums__header-title {
+        width: 95%;
+    }
+
+    .albums__header-subtitle {
+        width: 95%;
+    }
+}

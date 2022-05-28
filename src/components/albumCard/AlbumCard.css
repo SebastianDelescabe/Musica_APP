@@ -47,15 +47,6 @@
     cursor: pointer;
     border-radius: 24px;
     border: none;
-
-    transition: color .3s ease;
-}
-
-@media screen and (max-width: 1150px) {
-    .albumCard {
-        margin:2rem 0rem;
-    }
-
 }
 
 @media screen and (max-width: 850px) {
