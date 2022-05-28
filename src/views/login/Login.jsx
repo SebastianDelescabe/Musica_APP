@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useLocation, Navigate } from 'react-router-dom';
 import { loginArrow, rigthArrow } from '../../assets';
 import queryString from 'query-string';

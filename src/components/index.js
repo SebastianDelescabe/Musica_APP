@@ -1,15 +1,11 @@
-import Login from "./login/Login";
-import Navbar from "./navbar/Navbar";
-import Home from "./home/Home";
 import AlbumCard from "./albumCard/AlbumCard";
 import Pagination from "./pagination/Pagination";
 import Search from "./search/Search";
+import SlideCard from "./slideCard/SlideCard";
 
 export {
-    Login,
-    Navbar,
-    Home,
     AlbumCard,
     Pagination,
-    Search
+    Search,
+    SlideCard
 }

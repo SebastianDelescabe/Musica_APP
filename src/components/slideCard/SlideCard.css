@@ -1,0 +1,68 @@
+.slideCard img {
+    width: 275px;
+    height: 245px;
+    opacity: 0.8;
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.slideCard__active {
+    width: 500px;
+    height: 310px;
+    background: #D6F379;
+    border-radius: 24px;
+
+}
+
+.slideCard__active img {
+    width: 460px;
+    height: 220px;
+    opacity: 0.8;
+    border-radius: 12px;
+    margin: 2% 4%;
+}
+
+.slideCard__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+
+.slideCard__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+
+.slideCard__active button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 155px;
+    height: 45px;
+
+    background: #D6F379;
+    cursor: pointer;
+    border-radius: 24px;
+    border: none;
+
+    transition: color .3s ease;
+}
+
+.slideCard__containerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.slideCard__container {
+    display: flex;
+    justify-content: space-around;
+}

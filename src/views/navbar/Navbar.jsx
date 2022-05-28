@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { logo, sun } from '../../assets';
-import { BackgroundContext } from '../../helpers/BackgroundContext';
+import { BackgroundContext } from '../../context/BackgroundContext';
 import './Navbar.css'
 
 const Navbar = () => {
@@ -9,11 +9,12 @@ const Navbar = () => {
     const [activeButton, setActiveButton] = useState('search');
     const [token, setToken] = useState(null);
 
-    const { setTheme, theme } = useContext(BackgroundContext)
+    const { setThemeBlack, themeBlack } = useContext(BackgroundContext)
 
     const handleLogout = () => {
         sessionStorage.removeItem('token')
         setToken(null)
+        setThemeBlack(false)
     }
 
     useEffect(() => {
@@ -56,7 +57,7 @@ const Navbar = () => {
                             <img
                                 src={sun}
                                 alt="sun"
-                                onClick={() => setTheme(!theme)}
+                                onClick={() => setThemeBlack(!themeBlack)}
                             />
                         </div>
                     </div>

@@ -46,5 +46,7 @@
     background: #D6F379;
     cursor: pointer;
     border-radius: 24px;
-    border: none
+    border: none;
+
+    transition: color .3s ease;
 }

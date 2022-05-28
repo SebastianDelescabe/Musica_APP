@@ -15,5 +15,15 @@ export const getAlbums = async (query) => {
         }
     })
 
-    return data.tracks.items
+    const usableData = data.tracks.items.map(element => {
+        return {
+            id: element.album.id,
+            release_date: element.album.release_date,
+            image: element.album.images[0],
+            name: element.album.name,
+            favorite: false
+        }
+    })
+
+    return usableData
 }
