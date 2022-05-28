@@ -21,24 +21,24 @@ const Login = () => {
     return (
         <>
             {token && <Navigate to={'/search'} />}
-            {
-                !token && (
-                    <div className='login'>
-                        <img src={loginArrow} alt="Login Arrow" />
-                        <div className='login__data'>
-                            <span className='login__data-title'>Disfruta de la <span>mejor musica</span></span>
-                            <span className='login__data-subtitle'>Accede a tu cuenta para guardar tus albumes favoritos.</span>
-                            <div className='login__data-button'>
-                                <a
-                                    href={`https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=token`}
-                                >
-                                    Log in con Spotify</a>
+            {!token && (
+                <div className='login'>
+                    <img src={loginArrow} alt="Login Arrow" />
+                    <div className='login__data'>
+                        <span className='login__data-title'>Disfruta de la <span>mejor musica</span></span>
+                        <span className='login__data-subtitle'>Accede a tu cuenta para guardar tus albumes favoritos.</span>
+                        <div className='login__data-button'>
+                            <a
+                                href={`https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=token`}
+                            >
+                                Log in con Spotify
                                 <img src={rigthArrow} alt="" />
-                            </div>
+                            </a>
+
                         </div>
                     </div>
-                )
-            }
+                </div>
+            )}
         </>
     )
 }

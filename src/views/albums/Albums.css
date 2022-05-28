@@ -11,6 +11,7 @@
     font-weight: 700;
     font-size: 65px;
     line-height: 75px;
+    margin-bottom: 15px;
 }
 
 .albums__header-title span {
@@ -32,9 +33,9 @@
 }
 
 .albums__slider-container {
-    margin: 2% 10%;
+    margin: 2% 6%;
     overflow-x: hidden;
-    width: 80%;
+    width: 85%;
 }
 
 .albums__slider-item {

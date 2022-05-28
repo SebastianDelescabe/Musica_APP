@@ -12,16 +12,37 @@ a {
     text-decoration: none;
 }
 
+.app__black {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    width: 99vw;
+    height: 92vh;
+    transition: background-color 0.5s ease;
+}
+
+
+.app__white {
+    background-color: white;
+    color: black;
+    width: 99vw;
+    height: 92vh;
+    transition: background-color 0.5s ease;
+}
+
+/* Cambia las alertas de la libreria sweetAlert */
+.swal2-popup {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(24, 23, 23);
+
+}
+
+/* Usado en los span de paginacion */
 .no-select {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.App {
-    background-color: white;
-    color: black;
-    width: 99vw;
-    height: 92vh;
 }

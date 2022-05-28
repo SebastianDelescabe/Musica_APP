@@ -6,7 +6,7 @@ const Search = ({ handleOnSubmit, setInput, input }) => {
     const handleInputChange = (e) => {
         setInput(e.target.value)
     }
-
+    
     return (
         <div className='search'>
             <form onSubmit={handleOnSubmit}>

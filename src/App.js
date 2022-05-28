@@ -14,17 +14,17 @@ const App = () => {
     return (
         <BackgroundContext.Provider
             value={{ themeBlack, setThemeBlack }}>
-        <Favorites.Provider
-            value={{ favorites, setFavorites }}>
+            <Favorites.Provider
+                value={{ favorites, setFavorites }}>
                 <Navbar />
-                <div>
+                <div className='animate__animated animate__fadeIn'>
                     <Routes>
                         <Route exact path='/' element={<Login />} />
                         <Route path='/search' element={<Home />} />
                         <Route path='/albums' element={<Albums />} />
                     </Routes>
                 </div>
-        </Favorites.Provider>
+            </Favorites.Provider>
         </BackgroundContext.Provider >
     )
 }

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Favorites } from '../../context/Favorites';
+import Swal from 'sweetalert2'
 import './AlbumCard.css'
 
 const AlbumCard = ({ album, albums }) => {
@@ -18,7 +19,11 @@ const AlbumCard = ({ album, albums }) => {
             albums[findItem].favorite = true
 
         } else {
-            console.log('ya se encuentra en favoritos');
+            Swal.fire({
+                icon: 'error',
+                title: 'Ya se encuentra en tu Album!',
+                confirmButtonColor: '#DD6B55',
+            })
         }
     }
 

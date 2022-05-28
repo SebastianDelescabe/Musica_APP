@@ -27,42 +27,40 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <img src={logo} alt="" />
-            {
-                token && (
-                    <div className='navbar__loged'>
-                        <div className='navbar__position'>
-                            <NavLink
-                                to='/search'
-                                onClick={() => setActiveButton('search')}
-                                className={activeButton === 'search' ? 'navbar__link-active' : 'navbar__link'}
-                            >
-                                Buscar
-                            </NavLink>
-                            <NavLink
-                                to='/albums'
-                                onClick={() => setActiveButton('albums')}
-                                className={activeButton === 'albums' ? 'navbar__link-active' : 'navbar__link'}
-                            >
-                                My albums
-                            </NavLink>
-                            <div />
-                            <NavLink
-                                onClick={handleLogout}
-                                to={'/'}
-                                className='navbar__link'
-                            >
-                                Cerrar sesión
-                            </NavLink>
-                            <div />
-                            <img
-                                src={sun}
-                                alt="sun"
-                                onClick={() => setThemeBlack(!themeBlack)}
-                            />
-                        </div>
+            {token && (
+                <div className='navbar__loged'>
+                    <div className='navbar__position'>
+                        <NavLink
+                            to='/search'
+                            onClick={() => setActiveButton('search')}
+                            className={activeButton === 'search' ? 'navbar__link-active' : 'navbar__link'}
+                        >
+                            Buscar
+                        </NavLink>
+                        <NavLink
+                            to='/albums'
+                            onClick={() => setActiveButton('albums')}
+                            className={activeButton === 'albums' ? 'navbar__link-active' : 'navbar__link'}
+                        >
+                            My albums
+                        </NavLink>
+                        <div />
+                        <NavLink
+                            onClick={handleLogout}
+                            to={'/'}
+                            className='navbar__link'
+                        >
+                            Cerrar sesión
+                        </NavLink>
+                        <div />
+                        <img
+                            src={sun}
+                            alt="sun"
+                            onClick={() => setThemeBlack(!themeBlack)}
+                        />
                     </div>
-                )
-            }
+                </div>
+            )}
         </div>
     )
 }
