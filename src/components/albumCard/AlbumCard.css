@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Montserrat';
+    margin: 2rem 0rem;
 }
 
 .albumCard img {
@@ -47,16 +48,4 @@
     cursor: pointer;
     border-radius: 24px;
     border: none;
-}
-
-@media screen and (max-width: 850px) {
-    .navbar__position {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .navbar__position {
-        width: 100%;
-    }
 }
