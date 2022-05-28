@@ -43,6 +43,11 @@
     line-height: 20px;
 }
 
+.navbar__link-logout-responsive {
+    display: none;
+}
+
+
 .navbar__position img {
     cursor: pointer;
 }

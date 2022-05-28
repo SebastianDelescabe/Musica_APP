@@ -32,7 +32,7 @@ const Albums = () => {
     },) 
 
     return (
-        <>
+        <div className='albums'>
             {!token && <Navigate to={'/'} />}
             {token && (
                 <div className={!themeBlack ? 'app__white' : 'app__black'}>
@@ -55,7 +55,7 @@ const Albums = () => {
                     )}
                 </div>
             )}
-        </>
+        </div>
     )
 }
 

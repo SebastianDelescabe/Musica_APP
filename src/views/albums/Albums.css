@@ -1,3 +1,7 @@
+.albums {
+    height: 92vh;
+}
+
 .albums__header {
     display: flex;
     flex-direction: column;

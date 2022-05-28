@@ -68,6 +68,11 @@ const Home = () => {
               setInput={setInput}
             />
           </div>
+          {
+            albums.length < 1 && (
+              <div className='home__body-complete-heigth'></div>
+            )
+          }
           {albums.length > 1 && (
             <div className='home__body animate__animated animate__fadeIn'>
               <span className='home__body-text'>Guarda tus álbumes favoritos de <em><b>{input}</b></em></span>
