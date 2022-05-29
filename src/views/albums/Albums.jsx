@@ -29,7 +29,7 @@ const Albums = () => {
         if (favorites.length !== 0) {
             setWidth(carousel.current.scrollWidth - (carousel.current.offsetWidth - 100));
         }
-    },) 
+    })
 
     return (
         <div className='albums'>
@@ -40,6 +40,11 @@ const Albums = () => {
                         <span className='albums__header-title'>Mis albumes <span>guardados</span></span>
                         <span className='albums__header-subtitle'> Disfruta de tu música a un solo click y descube que discos has guardado dentro de “mis álbumes”</span>
                     </div>
+                    {
+                        favorites.length < 1 && (
+                            <div className='complete-heigth'></div>
+                        )
+                    }
                     {favorites.length !== 0 && (
                         <motion.div ref={carousel} className='albums__slider-container animate__animated animate__fadeIn'>
                             <motion.div className='albums__slider' drag='x' dragConstraints={{ right: 0, left: -width }}>

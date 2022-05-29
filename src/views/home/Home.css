@@ -26,11 +26,6 @@
     margin-top: 5px;
 }
 
-/* fix white theme, quedaba la pantalla a la mitad cubierta */
-.home__body-complete-heigth {
-    height: 60vh;
-}
-
 .home__body {
     display: flex;
     flex-direction: column;

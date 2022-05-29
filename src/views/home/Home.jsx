@@ -70,7 +70,7 @@ const Home = () => {
           </div>
           {
             albums.length < 1 && (
-              <div className='home__body-complete-heigth'></div>
+              <div className='complete-heigth'></div>
             )
           }
           {albums.length > 1 && (

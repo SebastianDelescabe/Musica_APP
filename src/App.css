@@ -48,6 +48,12 @@ a {
     user-select: none;
 }
 
+/* fix al theme, para rellenar pantalla*/
+.complete-heigth {
+    height: 60vh;
+}
+
+
 body::-webkit-scrollbar {
     width: 3px;
 }
