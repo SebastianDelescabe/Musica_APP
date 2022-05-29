@@ -28,6 +28,7 @@ const AlbumCard = ({ album, albums }) => {
     }
 
     const removeAlbum = () => {
+
         const filterFavorite = favorites.filter(favorite => favorite.id !== album.id)
         setFavorites(filterFavorite)
         const findItem = albums.findIndex(e => e.id === album.id)
