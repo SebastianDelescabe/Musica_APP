@@ -4,6 +4,7 @@
 
 ## Funcionalidades: 
 Login con cuenta de spotify, busqueda de albums por nombre pudiendo agregarse a favoritos y persisitr esos datos.
+Agregado en el dashboard de Spotify el correo de ielorduy@aluxion.com para que puedan corroborar la funcionalidad.
 
 ## Librerias:
 
