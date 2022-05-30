@@ -19,8 +19,8 @@ Agregado en el dashboard de Spotify el correo de la empresa para que puedan corr
 ### 3- npm start (para dar incio)
 
 ## Variables de entorno necesarias:
-REACT_APP_CLIENT_ID = '(Ingresar cliente proporcionado por la API Spotify)'
-REACT_APP_REDIRECT_URI = 'http://localhost:3000/ (Agregar al dashboard de Spotify para hacer funcionar -> Edit Settings -> Redirect URIs)'
+### REACT_APP_CLIENT_ID = '(Ingresar cliente proporcionado por la API Spotify)'
+### REACT_APP_REDIRECT_URI = 'http://localhost:3000/ (Agregar al dashboard de Spotify para hacer funcionar -> Edit Settings -> Redirect URIs)'
 
 
 # Fecha de incio: 26/05/2022
