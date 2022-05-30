@@ -18,28 +18,26 @@ const SlideCard = ({ album }) => {
         <div
             onMouseEnter={() => setMouseIn(true)}
             onMouseLeave={() => setMouseIn(false)}
-            className='slideCard'
+            className={mouseIn ? 'slideCard__active' : 'slideCard'}
         >
-            <div className={mouseIn ? 'slideCard__active' : null}>
-                <img
-                    src={image.url}
-                    alt=""
-                />
-                {mouseIn && (
-                    <div className='slideCard__container'>
-                        <div className='slideCard__containerText'>
-                            <span className='slideCard__title'>{name.substring(0, 20)}</span>
-                            <span className='slideCard__subtitle'>Publicado: {release_date}</span>
-                        </div>
-                        <div>
-                            <button
-                                style={{ backgroundColor: '#E3513D' }}
-                                onClick={removeAlbum}
-                            > - Remove album</button>
-                        </div>
+            <img
+                src={image.url}
+                alt=""
+            />
+            {mouseIn && (
+                <div className='slideCard__container'>
+                    <div className='slideCard__containerText'>
+                        <span className='slideCard__title'>{name.substring(0, 20)}</span>
+                        <span className='slideCard__subtitle'>Publicado: {release_date}</span>
                     </div>
-                )}
-            </div>
+                    <div>
+                        <button
+                            style={{ backgroundColor: '#E3513D' }}
+                            onClick={removeAlbum}
+                        > - Remove album</button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

@@ -3,7 +3,7 @@
     height: 245px;
     border-radius: 12px;
     pointer-events: none;
-    
+
 }
 
 .slideCard__active {
@@ -11,16 +11,17 @@
     height: 350px;
     border-radius: 24px;
     background-color: #D6F379;
-    
+
     transition: 1s ease;
 }
 
 .slideCard__active img {
     width: 365px;
     height: 250px;
-    border-radius: 12px;    
+    border-radius: 12px;
     margin: 2% 4%;
 
+    pointer-events: none;
     transition: 0.5s ease;
 }
 
@@ -47,10 +48,10 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    
+
     width: 155px;
     height: 45px;
-    
+
     background: #D6F379;
     cursor: pointer;
     border-radius: 24px;
