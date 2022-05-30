@@ -14,9 +14,9 @@ Agregado en el dashboard de Spotify el correo de la empresa para que puedan corr
 ### sweetalert2 (Manejo de user experience en el formulario de contacto)
 
 # Levantar proyecto
-## 1- git clone (copiar repositorio localmente) 
-## 2- npm install (dentro del proyecto para instalar dependencias)
-## 3- npm start (para dar incio)
+### 1- git clone (copiar repositorio localmente) 
+### 2- npm install (dentro del proyecto para instalar dependencias)
+### 3- npm start (para dar incio)
 
 ## Variables de entorno necesarias:
 REACT_APP_CLIENT_ID = '(Ingresar cliente proporcionado por la API Spotify)'
