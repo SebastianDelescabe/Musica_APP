@@ -17,7 +17,7 @@ const Albums = () => {
     const carousel = useRef()
 
     useEffect(() => {
-        if (favorites.length !== 0) {
+        if (favorites && favorites.length !== 0) {
             localStorage.setItem('favorites', JSON.stringify(favorites))
         } else {
             const localFavorites = JSON.parse(localStorage.getItem('favorites'))
