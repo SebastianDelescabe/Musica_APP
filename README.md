@@ -1,4 +1,3 @@
-# Ejercicio Sebastian_Delescabe_FrontendDeveloper
 # Musica App
 ## Live demo: https://music-app-delescabe.netlify.app/
 
