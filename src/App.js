@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Login, Navbar, Home, Albums } from './views';
+import { LandingPage, Navbar, Home, Albums } from './views';
 import { BackgroundContext } from './context/BackgroundContext';
 import { Favorites } from './context/Favorites';
 import './App.css'
@@ -19,10 +19,10 @@ const App = () => {
                 <Navbar />
                 <div className='animate__animated animate__fadeIn'>
                     <Routes>
-                        <Route exact path='/' element={<Login />} />
+                        <Route exact path='/' element={<LandingPage />} />
                         <Route path='/search' element={<Home />} />
                         <Route path='/albums' element={<Albums />} />
-                        <Route path='/*' element={<Login />} />
+                        <Route path='/*' element={<LandingPage />} />
                     </Routes>
                 </div>
             </Favorites.Provider>

@@ -1,0 +1,79 @@
+.slideCard img {
+  width: 350px;
+  height: 250px;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.slideCard__active {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 24px;
+  background-color: #d6f379;
+  transition: 1s ease;
+}
+
+.slideCard__active img {
+  width: 450px;
+  height: 300px;
+  border-radius: 12px;
+  margin: 2% 4%;
+
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+.slideCard__title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+
+.slideCard__subtitle {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+}
+
+.slideCard__active button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  width: 155px;
+  height: 45px;
+
+  background: #d6f379;
+  cursor: pointer;
+  border-radius: 24px;
+  border: none;
+}
+
+.slideCard__containerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slideCard__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.slideCard:hover {
+  transform: scale(1.1);
+}
+.slideCard {
+  transition: all 0.45s ease-in-out;
+}
